@@ -1,3 +1,8 @@
+---
+name: session-handoff
+description: Generate a lossless, zero-fluff session handoff document (HANDOFF.md) and bootstrap prompt to migrate a saturated or long conversation into a fresh thread without losing architectural decisions, verbatim user constraints, failed approaches, or unpersisted artifacts. Trigger whenever the user mentions "handoff", "/handoff", "session handoff", "context window is full/slow/laggy", "start a fresh chat/session", "compact this thread", "prepare a continuation prompt", or wants to carry state across Gemini web, Antigravity CLI, or Claude Code.
+---
+
 # Session Handoff
 
 Create a high-signal, zero-hallucination state transfer package so a new agent session can pick up immediately where the current conversation stops without repeating dead ends or losing subtle constraints.

@@ -1,6 +1,6 @@
 ---
 name: session-handoff
-description: Generate a lossless, zero-fluff session handoff document (HANDOFF.md) and bootstrap prompt to migrate a saturated or long conversation into a fresh thread without losing architectural decisions, verbatim user constraints, failed approaches, or unpersisted artifacts. Trigger whenever the user mentions "handoff", "/handoff", "session handoff", "context window is full/slow/laggy", "start a fresh chat/session", "compact this thread", "prepare a continuation prompt", or wants to carry state across Gemini web, Antigravity CLI, or Claude Code.
+description: Generate a lossless, zero-fluff session handoff document (HANDOFF.md) and bootstrap prompt to migrate a saturated or long conversation into a fresh thread without losing architectural decisions, verbatim user constraints, failed approaches, or unpersisted artifacts. Trigger whenever the user mentions "handoff", "/handoff", "session handoff", "context window is full/slow/laggy", "start a fresh chat/session", "compact this thread", "prepare a continuation prompt", or wants to carry state across Gemini web, Claude chat, Antigravity CLI, or Claude Code.
 ---
 
 # Session Handoff
@@ -9,7 +9,7 @@ Create a high-signal, zero-hallucination state transfer package so a new agent s
 
 ## Summary
 
-Standard conversation summaries fail because they abstract away exact constants, soften user constraints through paraphrasing, and omit failed approaches. This skill mines the full conversation chronologically, verifies workspace state when running in a CLI, and produces an adaptive handoff package that works seamlessly across **Gemini Web**, **Antigravity CLI (`agy`)**, and **Claude Code**.
+Standard conversation summaries fail because they abstract away exact constants, soften user constraints through paraphrasing, and omit failed approaches. This skill mines the full conversation chronologically, verifies workspace state when running in a CLI, and produces an adaptive handoff package that works seamlessly across **Gemini Web**, **Antigravity CLI (`agy`)**, and **Claude chat**, and **Claude Code**.
 
 ## When to Use
 
@@ -54,7 +54,7 @@ Use the exact 7-section structure below. Keep bullets dense, concrete, and scann
 
 ```markdown
 # SESSION HANDOFF: [Concise Project/Task Title]
-**Date:** YYYY-MM-DD | **Source Harness:** [Gemini Web / Antigravity CLI / Claude Code] | **Branch/Path:** [branch or N/A]
+**Date:** YYYY-MM-DD | **Source Harness:** [Gemini Web / Claude Web / Antigravity CLI / Claude Code] | **Branch/Path:** [branch or N/A]
 
 > **Incoming Agent Preamble:** Orient before acting. Claims below are tagged `[VERIFIED]`, `[INFERRED]`, or `[UNTESTED]`. Do not trust `[INFERRED]` or `[UNTESTED]` items without checking disk state or asking the user. Never repeat an approach listed in Section 4.
 
@@ -99,7 +99,7 @@ Use the exact 7-section structure below. Keep bullets dense, concrete, and scann
      2. Respect all verbatim rules in Section 2 and do not repeat rejected approaches in Section 4.
      3. Execute Step 1 of Section 7 ("Immediate Next Steps") or confirm readiness.
      ```
-- **When running in Gemini Web (or when no local workspace exists):**
+- **When running in Gemini Web or Claude Web (or when no local workspace exists):**
   1. Output the **entire Handoff Document wrapped inside a single copy-pasteable `markdown` code block**, preceded by a 2-line instruction header at the top of the block so the user can copy once, open a fresh chat, paste, and hit Enter.
 
 ## Gotchas

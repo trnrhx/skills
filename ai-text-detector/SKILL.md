@@ -15,7 +15,7 @@ Perform a forensic stylistic audit on any webpage, article, social post, or text
 
 ## Audit Workflow
 
-### Step 1:Ingest and Contextualize
+### Step 1: Ingest and Contextualize
 
 1. Identify the text source (active cobrowsing tab, selected passage, or pasted text) and its genre (news article, LinkedIn post, technical documentation, fiction, academic essay, or Reddit/forum comment).
 2. Note baseline expectations: corporate press releases and SEO blogs naturally share some stiffness with LLMs, so require multiple converging signal categories before assigning a high probability.

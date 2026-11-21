@@ -1,3 +1,8 @@
+---
+name: consumer-research
+description: Run synthetic consumer panel product and concept testing using demographic persona conditioning, free-text elicitation, and anchor-calibrated Likert distribution mapping (simplified Semantic Similarity Rating). Use when the user wants to test a product idea, concept, landing page, pricing tier, or feature set with a target market, run a synthetic focus group, estimate purchase intent, or gather structured consumer feedback.
+---
+
 # Consumer Research
 
 Simulate a representative synthetic consumer panel to test product concepts, estimate purchase intent distributions, and surface candid qualitative feedback. Based on the Semantic Similarity Rating (SSR) methodology (Maier et al., 2025), this workflow avoids the regression-to-the-mean bias of direct numerical LLM ratings by eliciting unconstrained free-text reactions from demographically grounded personas and mapping those reactions onto a 5-point Likert distribution.

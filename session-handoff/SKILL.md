@@ -1,6 +1,6 @@
 ---
 name: session-handoff
-description: Generate a lossless, zero-fluff session handoff document (HANDOFF.md) and bootstrap prompt to migrate a saturated or long conversation into a fresh thread without losing architectural decisions, verbatim user constraints, failed approaches, or unpersisted artifacts. Trigger whenever the user mentions "handoff", "/handoff", "session handoff", "context window is full/slow/laggy", "start a fresh chat/session", "compact this thread", "prepare a continuation prompt", or wants to carry state across Gemini web, Claude chat, Antigravity CLI, or Claude Code.
+description: Generate a lossless, zero-fluff session handoff document (HANDOFF.md) and bootstrap prompt to migrate a saturated or long conversation into a fresh thread without losing architectural decisions, verbatim user constraints, failed approaches, or unpersisted artifacts. Trigger whenever the user mentions "handoff", "/handoff", "session handoff", "context window is full/slow/laggy", "start a fresh chat/session", "compact this thread", "prepare a continuation prompt", or wants to carry state across Gemini web, Claude web, Antigravity CLI, or Claude Code.
 ---
 
 # Session Handoff
@@ -9,7 +9,7 @@ Create a high-signal, zero-hallucination state transfer package so a new agent s
 
 ## Summary
 
-Standard conversation summaries fail because they abstract away exact constants, soften user constraints through paraphrasing, and omit failed approaches. This skill mines the full conversation chronologically, verifies workspace state when running in a CLI, and produces an adaptive handoff package that works seamlessly across **Gemini Web**, **Antigravity CLI (`agy`)**, and **Claude chat**, and **Claude Code**.
+Standard conversation summaries fail because they abstract away exact constants, soften user constraints through paraphrasing, and omit failed approaches. This skill mines the full conversation chronologically, verifies workspace state when running in a CLI, and produces an adaptive handoff package that works seamlessly across **Gemini Web**, **Antigravity CLI (`agy`)**, **Claude web**, and **Claude Code**.
 
 ## When to Use
 

@@ -30,7 +30,7 @@ LLMs struggle with pure negative constraints ("Do not write like AI") and often 
 - *Instead of trailing "-ing" significance clauses* -> Stop the sentence at the concrete object or state the exact causal mechanism in a separate sentence.
 - *Instead of "Not X, but Y" contrasts* -> State directly what the subject *is* or *does* without using a foil.
 - *Instead of uniform `Bold: Description` bullets* -> Write in continuous prose paragraphs, or vary list item structures without bolded lead-ins.
-- *Instead of abstract stock verbs ("foster," "navigate," "underscode")* -> Use physical, domain-specific, or plain-English verbs ("build," "pay for," "cut," "measure," "break").
+- *Instead of abstract stock verbs ("foster," "navigate," "underscore")* -> Use physical, domain-specific, or plain-English verbs ("build," "pay for," "cut," "measure," "break").
 
 ### Step 3: Output the Ready-to-Use Guardrail Block
 
